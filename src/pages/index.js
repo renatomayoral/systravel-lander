@@ -4,6 +4,7 @@ import Card from '../components/Card';
 import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
+import PricingTable from '../components/PricingTable';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
@@ -16,16 +17,15 @@ const Index = () => (
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of your landing page
+            O Melhor Sistema de Gestão de Hotéis e Pousadas!
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+            Em Nuvem
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg">Testar Agora</Button>
           </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+          <p className="mt-4 text-gray-600">*30 dias sem custos.</p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
@@ -136,7 +136,8 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+    <PricingTable/>
+    <section className="container mx-auto my-20 py-24 bg-blue-700 rounded-lg text-center">
       <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
       <p className="mt-8 text-xl font-light">
         Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.

@@ -8,13 +8,14 @@ const sizes = {
 
 const Button = ({ children, className = '', size }) => {
   return (
-    <button
+    <button 
       type="button"
       className={`
         ${sizes[size] || sizes.default}
         ${className}
         bg-primary
-        hover:bg-primary-darker
+        hover:bg-white
+        hover:text-blue-600
         rounded
         text-white
     `}
